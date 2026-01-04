@@ -12,7 +12,7 @@ import './SalaryTracker.css';
  */
 const SalaryTracker = () => {
   // Get API base URL dynamically from current host
-  const API_BASE_URL = `http://${window.location.hostname}:5000/api`;
+  const API_BASE_URL = `http://${window.location.hostname}:5002/api`;
   
   // State for salary records
   const [salaries, setSalaries] = useState([]);
