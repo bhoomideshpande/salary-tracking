@@ -1,0 +1,110 @@
+🚀 SALARY TRACKER - INSTANT RUN GUIDE
+
+═══════════════════════════════════════════════════════════════════════════
+
+⚡ SUPER QUICK START (Copy & Paste)
+
+═══════════════════════════════════════════════════════════════════════════
+
+STEP 1: Open PowerShell/Terminal and run this:
+
+cd backend
+npm install
+
+═══════════════════════════════════════════════════════════════════════════
+
+STEP 2: In the same terminal, run this:
+
+cd ../frontend
+npm install
+
+═══════════════════════════════════════════════════════════════════════════
+
+STEP 3: Open FIRST NEW terminal and run this:
+
+mongod
+
+═══════════════════════════════════════════════════════════════════════════
+
+STEP 4: Open SECOND NEW terminal and run this:
+
+cd backend
+npm start
+
+═══════════════════════════════════════════════════════════════════════════
+
+STEP 5: Open THIRD NEW terminal and run this:
+
+cd frontend
+npm start
+
+═══════════════════════════════════════════════════════════════════════════
+
+✅ DONE! Access here: http://localhost:3000
+
+═══════════════════════════════════════════════════════════════════════════
+
+TERMINAL SUMMARY:
+
+Terminal 1: mongod
+Terminal 2: cd backend && npm start
+Terminal 3: cd frontend && npm start
+
+Then: Open browser → http://localhost:3000
+
+═══════════════════════════════════════════════════════════════════════════
+
+ONE-LINE SETUP (from project root):
+
+cd backend && npm install && cd ../frontend && npm install
+
+═══════════════════════════════════════════════════════════════════════════
+
+EXPECTED OUTPUT:
+
+After running npm start in Backend:
+✓ MongoDB connected successfully
+✓ Server is running on http://localhost:5000
+
+After running npm start in Frontend:
+Compiled successfully!
+You can now view salary-tracker-frontend in the browser.
+Local: http://localhost:3000
+
+═══════════════════════════════════════════════════════════════════════════
+
+STOP SERVERS: Press Ctrl+C in each terminal
+
+═══════════════════════════════════════════════════════════════════════════
+
+TROUBLESHOOTING:
+
+Port 5000 in use?
+  → Edit: backend/.env
+  → Change: PORT=5001
+
+MongoDB not starting?
+  → Ensure MongoDB is installed
+  → Run: mongod (from installation path)
+  → Or use MongoDB Atlas (cloud)
+
+Module not found?
+  → Run: npm install
+  → In: backend/ and frontend/
+
+═══════════════════════════════════════════════════════════════════════════
+
+DEFAULT CONFIGURATION:
+
+MongoDB URI: mongodb://localhost:27017/salary_tracker
+Backend Port: 5000
+Frontend Port: 3000
+Node Environment: development
+
+═══════════════════════════════════════════════════════════════════════════
+
+THAT'S IT! You're done! 🎉
+
+Your Salary Tracker System is now running at http://localhost:3000
+
+═══════════════════════════════════════════════════════════════════════════
